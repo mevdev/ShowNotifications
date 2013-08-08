@@ -48,7 +48,6 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of notifications
-//    return //[[[UIApplication sharedApplication] scheduledLocalNotifications] count];
     return [notificationArray count];
 }
 
@@ -61,13 +60,13 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
-    // Get list of local notifications
-//    NSArray *notificationArray = [[UIApplication sharedApplication] scheduledLocalNotifications];
+    // Get the local notification for this row.
     UILocalNotification *notif = [notificationArray objectAtIndex:indexPath.row];
     
     // Display notification info
     [cell.textLabel setText:notif.alertBody];
     
+    //format the date for this timezone and display it as subTitle.
     NSDateFormatter *theFormatter = [[NSDateFormatter alloc] init];
     [theFormatter setDateFormat:@"hh:mma MM/dd/yy"];
     [cell.detailTextLabel setText:[theFormatter stringFromDate:notif.fireDate]];
