@@ -18,6 +18,7 @@
 		992C1E0617B416AC006AE2B9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 992C1E0517B416AC006AE2B9 /* Default-568h@2x.png */; };
 		992C1E0917B416AC006AE2B9 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 992C1E0717B416AC006AE2B9 /* MainStoryboard.storyboard */; };
 		992C1E0C17B416AC006AE2B9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 992C1E0B17B416AC006AE2B9 /* ViewController.m */; };
+		992C1E1417B41844006AE2B9 /* NotificationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 992C1E1317B41844006AE2B9 /* NotificationsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		992C1E0817B416AC006AE2B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		992C1E0A17B416AC006AE2B9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		992C1E0B17B416AC006AE2B9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		992C1E1217B41844006AE2B9 /* NotificationsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationsTableViewController.h; sourceTree = "<group>"; };
+		992C1E1317B41844006AE2B9 /* NotificationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				992C1E0717B416AC006AE2B9 /* MainStoryboard.storyboard */,
 				992C1E0A17B416AC006AE2B9 /* ViewController.h */,
 				992C1E0B17B416AC006AE2B9 /* ViewController.m */,
+				992C1E1217B41844006AE2B9 /* NotificationsTableViewController.h */,
+				992C1E1317B41844006AE2B9 /* NotificationsTableViewController.m */,
 				992C1DF617B416AC006AE2B9 /* Supporting Files */,
 			);
 			path = ShowNotifications;
@@ -176,6 +181,7 @@
 				992C1DFC17B416AC006AE2B9 /* main.m in Sources */,
 				992C1E0017B416AC006AE2B9 /* AppDelegate.m in Sources */,
 				992C1E0C17B416AC006AE2B9 /* ViewController.m in Sources */,
+				992C1E1417B41844006AE2B9 /* NotificationsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

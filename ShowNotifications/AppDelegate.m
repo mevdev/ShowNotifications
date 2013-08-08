@@ -2,7 +2,6 @@
 //  AppDelegate.m
 //  ShowNotifications
 //
-//  Created by Finity Design 2 on 8/8/13.
 //  Copyright (c) 2013 Robert Linnemann. All rights reserved.
 //
 
@@ -12,7 +11,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+
+    UILocalNotification *notification = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
+    if(notification){
+        NSLog(@"Notification initiated app startup");
+        [application setApplicationIconBadgeNumber:0]; //reset badge on icon
+    } else {
+        //we'll still clear the badge #
+        [application setApplicationIconBadgeNumber:0];
+    }
+
+    
     return YES;
 }
 							
